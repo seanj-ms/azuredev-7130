@@ -6,7 +6,7 @@ namespace AgenticAI;
 
 public static class ConnectWithAzureOpenAI
 {
-    public static async Task RunAsync(string input = "")
+    public static async Task<string> RunAsync(string input = "")
     {
         var client = LLMConfiguration.GetAzureOpenAIClient();
         var deploymentName = LLMConfiguration.GetDeploymentName();
@@ -58,5 +58,7 @@ public static class ConnectWithAzureOpenAI
         }
 
         Console.WriteLine("End of the Application Processing!");
+
+        return response?.GetContent()!;
     }
 }
