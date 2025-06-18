@@ -1,6 +1,6 @@
 using System;
 using System.Threading.Tasks;
-using AgenticAI;
+using agenticai.app;
 
 class Program
 {
@@ -24,7 +24,8 @@ class Program
             switch (choice)
             {
                 case 1:
-                    await ConnectWithAzureOpenAI.RunAsync();
+                    var azureOpenAI = new ConnectWithAzureOpenAI();
+                    await azureOpenAI.RunAsync();
                     break;
                 case 0:
                     Console.WriteLine("Exiting...");

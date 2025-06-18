@@ -2,11 +2,11 @@ using AutoGen.Core;
 using AutoGen.OpenAI;
 using AutoGen.OpenAI.Extension;
 
-namespace AgenticAI;
+namespace agenticai.app;
 
-public static class ConnectWithAzureOpenAI
+public class ConnectWithAzureOpenAI
 {
-    public static async Task<string> RunAsync(string input = "")
+    public async Task<string> RunAsync(string input = "")
     {
         var client = LLMConfiguration.GetAzureOpenAIClient();
         var deploymentName = LLMConfiguration.GetDeploymentName();
