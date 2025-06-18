@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "agenticai.web", "agenticai.web\agenticai.web.csproj", "{B0C2054C-3636-45CC-8E3E-3F34703093CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "agenticai.app", "agenticai.app\agenticai.app.csproj", "{76C128A3-B02A-4345-9BB3-CDF8D711DDF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{B0C2054C-3636-45CC-8E3E-3F34703093CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0C2054C-3636-45CC-8E3E-3F34703093CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0C2054C-3636-45CC-8E3E-3F34703093CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76C128A3-B02A-4345-9BB3-CDF8D711DDF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76C128A3-B02A-4345-9BB3-CDF8D711DDF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76C128A3-B02A-4345-9BB3-CDF8D711DDF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76C128A3-B02A-4345-9BB3-CDF8D711DDF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
