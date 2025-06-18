@@ -1,16 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-using agenticai.app;
+using AgenticAI.App;
 
-namespace agenticai.web.Controllers
+namespace AgenticAI.App.web.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
     public class AzureOpenAIController : ControllerBase
     {
-        private readonly agenticai.app.ConnectWithAzureOpenAI _openai;
+        private readonly ConnectWithAzureOpenAI _openai;
 
-        public AzureOpenAIController(agenticai.app.ConnectWithAzureOpenAI openai)
+        public AzureOpenAIController(ConnectWithAzureOpenAI openai)
         {
             _openai = openai;
         }

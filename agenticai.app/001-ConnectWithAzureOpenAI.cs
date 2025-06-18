@@ -2,7 +2,7 @@ using AutoGen.Core;
 using AutoGen.OpenAI;
 using AutoGen.OpenAI.Extension;
 
-namespace agenticai.app;
+namespace AgenticAI.App;
 
 public class ConnectWithAzureOpenAI
 {

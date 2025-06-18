@@ -1,4 +1,4 @@
-namespace agenticai.web
+namespace AgenticAI.App
 {
     public class AzureOpenAIOptions
     {

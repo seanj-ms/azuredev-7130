@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Configuration;
 
-namespace agenticai.app;
+namespace AgenticAI.App;
 
 public static class ConfigurationUtils
 {

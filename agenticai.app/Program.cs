@@ -1,6 +1,6 @@
 using System;
 using System.Threading.Tasks;
-using agenticai.app;
+using AgenticAI.App;
 
 class Program
 {
@@ -11,8 +11,12 @@ class Program
         {
             Console.WriteLine("Menu:");
             Console.WriteLine("1. Connect with Azure OpenAI");
+            Console.WriteLine("2. Custom Middleware in Agent");
+
             Console.WriteLine("0. Exit");
+
             Console.Write("Enter your choice: ");
+
             var input = Console.ReadLine();
 
             if (!int.TryParse(input, out choice))
@@ -24,11 +28,14 @@ class Program
             switch (choice)
             {
                 case 1:
-                    var azureOpenAI = new ConnectWithAzureOpenAI();
-                    await azureOpenAI.RunAsync();
+                    var connectWithAzureOpenAI = new ConnectWithAzureOpenAI();
+                    await connectWithAzureOpenAI.RunAsync();
                     break;
                 case 0:
                     Console.WriteLine("Exiting...");
+                    break;
+                case 2:
+                    await CustomMiddlewareInAgent.RunAsync();
                     break;
                 default:
                     Console.WriteLine("Invalid option. Try again.");

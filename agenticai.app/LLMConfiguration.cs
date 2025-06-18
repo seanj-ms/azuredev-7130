@@ -1,6 +1,6 @@
 using Azure.AI.OpenAI;
 
-namespace agenticai.app;
+namespace AgenticAI.App;
 
 public static class LLMConfiguration
 {
