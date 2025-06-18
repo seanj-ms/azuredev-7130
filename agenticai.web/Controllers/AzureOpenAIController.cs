@@ -5,7 +5,7 @@ using AgenticAI.App;
 namespace AgenticAI.App.web.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/[AzureOpenAI]")]
     public class AzureOpenAIController : ControllerBase
     {
         private readonly ConnectWithAzureOpenAI _openai;

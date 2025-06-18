@@ -3,4 +3,11 @@
 GET {{agenticai.web_HostAddress}}/weatherforecast/
 Accept: application/json
 
+POST {{agenticai.web_HostAddress}}/api/AzureOpenAI/run
+Content-Type: application/json
+
+{
+  "Prompt": "Who controls this thing?"
+}
+
 ###

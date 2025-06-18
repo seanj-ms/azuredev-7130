@@ -12,7 +12,8 @@ class Program
             Console.WriteLine("Menu:");
             Console.WriteLine("1. Connect with Azure OpenAI");
             Console.WriteLine("2. Custom Middleware in Agent");
-
+            Console.WriteLine("3. RAG Middleware in Agent");
+            
             Console.WriteLine("0. Exit");
 
             Console.Write("Enter your choice: ");
@@ -36,6 +37,9 @@ class Program
                     break;
                 case 2:
                     await CustomMiddlewareInAgent.RunAsync();
+                    break;
+                case 3:
+                    await RAGMiddlewareInAgent.RunAsync();
                     break;
                 default:
                     Console.WriteLine("Invalid option. Try again.");
